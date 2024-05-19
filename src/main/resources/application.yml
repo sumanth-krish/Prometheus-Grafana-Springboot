@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: springBootMonitoring
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,prometheus
+  metrics:
+    tags:
+      application: ${spring.application.name}
