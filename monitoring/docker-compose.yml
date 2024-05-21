@@ -9,11 +9,16 @@ services:
     volumes:
       - ./prometheus/prometheus.yml:/etc/prometheus/prometheus.yml
 
+    listen_address: 0.0.0.0:9090
+
   grafana:
     image: grafana/grafana
     container_name: grafana
     ports:
       - "3000:3000"
+    environment:
+     - GF_SERVER_ROOT_URL=HTTP://0.0.0.0:3000
     restart: unless-stopped
     volumes:
       - ./grafana/datasources:/etc/grafana/provisioning/datasources
+    
