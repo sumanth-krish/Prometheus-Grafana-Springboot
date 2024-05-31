@@ -9,7 +9,7 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.example</groupId>
-	<artifactId>springBootMonitoring</artifactId>
+	<artifactId>monitoringDemo</artifactId>
 <!--	<version>0.0.1-SNAPSHOT</version>-->
 	<name>springBootMonitoring</name>
 	<description>Demo project for Monitoring Spring Boot with prometheus,Grafana</description>
